@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, request, jsonify
 
 app = Flask(__name__)
 
@@ -23,4 +23,4 @@ def latest_weather():
         return jsonify({"message": "No data yet"}), 200
     
 if __name__ == "__main__":
-    app.return(debug=True)
+    app.run(debug=True)
