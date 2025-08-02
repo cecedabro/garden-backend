@@ -7,7 +7,7 @@ API_URL = "https://garden-backend-bhti.onrender.com/api/weather"
 #Random data generator
 while True:
     data = {
-        "temperature": round(random.uniform(15, 35) 2),
+        "temperature": round(random.uniform(15, 35), 2),
         "humidity": round(random.uniform(30, 80), 2),
         "wind_speed": round(random.uniform(0, 10), 2)
     }
@@ -24,4 +24,3 @@ while True:
     time.sleep(10)
 
 
-    
